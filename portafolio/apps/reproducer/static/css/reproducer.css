@@ -1,0 +1,103 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0; }
+  body .container #controllers {
+    border: solid gray;
+    margin: 0;
+    padding: 0; }
+    body .container #controllers button img {
+      width: 30px;
+      height: 30px; }
+    body .container #controllers #sound_btn {
+      margin-left: 50px; }
+  body .container #info {
+    background-color: gray;
+    border: solid gray;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500; }
+    body .container #info #info-col-left {
+      float: left;
+      width: 50%; }
+    body .container #info #info-col-right {
+      float: left;
+      width: 50%; }
+  body .container #playList {
+    float: left;
+    margin: 0;
+    padding: 0; }
+    body .container #playList ol {
+      margin: 0;
+      padding: 0; }
+      body .container #playList ol li {
+        padding: 0;
+        margin: 0;
+        height: 30px; }
+        body .container #playList ol li a {
+          color: white;
+          text-decoration: none;
+          margin-left: 10px; }
+      body .container #playList ol li:hover {
+        border: solid purple;
+        font-weight: 800;
+        padding-top: 10px; }
+  @media screen and (min-width: 540px) {
+    body .container #cover {
+      text-align: center; }
+      body .container #cover #cover-img {
+        width: 50%; }
+    body .container #controllers {
+      width: 100%;
+      height: 60px;
+      padding-top: 15px;
+      padding-left: 15px; }
+    body .container #info {
+      width: 100%;
+      height: 50px; }
+    body .container #playList {
+      width: 99%; } }
+  @media screen and (min-width: 750px) {
+    body .container #cover {
+      margin: 3%; }
+      body .container #cover #cover-img {
+        width: 40%;
+        float: left; }
+    body .container #controllers {
+      float: left;
+      width: 50%;
+      padding: 1%;
+      margin-left: 3%; }
+    body .container #info {
+      width: 50%;
+      padding: 1%;
+      float: left;
+      margin-left: 3%; }
+    body .container #playList {
+      width: 50%;
+      padding: 1%;
+      margin-left: 3%; } }
+  @media screen and (min-width: 1000px) {
+    body .container #cover {
+      margin: 3%; }
+      body .container #cover #cover-img {
+        width: 40%;
+        float: left; }
+    body .container #controllers {
+      float: left;
+      width: 50%;
+      padding: 1%;
+      margin-left: 3%; }
+    body .container #info {
+      width: 50%;
+      padding: 1%;
+      float: left;
+      margin-left: 3%; }
+    body .container #playList {
+      width: 50%;
+      padding: 1%;
+      margin-left: 3%; } }
+
+/*# sourceMappingURL=reproducer.css.map */

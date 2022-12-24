@@ -1,0 +1,89 @@
+{% extends './base_rep.html' %}
+
+{% block title %}
+MP3 Reproducer
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+	<div id="cover">
+		<img src="../static/img/cover/cover0.png" alt="cover" id="cover-img" width="300px">
+	</div>
+	<div id="reproducer">
+		<audio id="audio">
+			<source src="" type="audio/mpeg" id="origin">
+			No compatible
+		</audio>
+	</div>
+	<div id="controllers">
+		<button id="left_btn">
+			<img src="../static/img/icons/btn-left.png" alt="Left">
+		</button>
+		<button id="play_btn">
+			<img src="../static/img/icons/btn-play.png" alt="Play" id="play-img">
+		</button>
+		<button id="right_btn">
+			<img src="../static/img/icons/btn-right.png" alt="Right">
+		</button>
+		<button id="sound_btn">
+			<img src="../static/img/icons/btn-sound.png" alt="">
+		</button>
+		<input type="range" max="1" min="0" step="0.1" class="volumen" id="volumen">
+	</div>
+	<div id="info">
+		<div id="info-col-left">
+			<label for="info" id="info-name">
+				Nombre:
+			</label>
+			<br>
+			<label for="info" id="info-album">
+				Album:
+			</label>
+		</div>
+		<div id="info-col-right">
+			<label for="info" id="info-artist">
+				Artista:
+			</label>
+			<br>
+			<label for="info" id="info-duration">
+				Duración: 00:00
+			</label>
+		</div>
+	</div>
+	<div id="playList">
+		<ol>
+			<hr>
+			<li id="track0" class="track" onclick="selectTrack(0)">
+				<a>
+					Cartel de Santa - Cheka Wey
+				</a>
+			</li>
+			<hr>
+			<li id="track1" class="track" onclick="selectTrack(1)">
+				<a>
+					DOUBLE CHERRY BLOSSOM
+				</a>
+			</li>
+			<hr>
+			<li id="track2" class="track" onclick="selectTrack(2)">
+				<a>
+					One More Night
+				</a>
+			</li>
+			<hr>
+			<li id="track3" class="track" onclick="selectTrack(3)">
+				<a>
+					Rocking to the Beat(110 Mix)
+				</a>
+			</li>
+			<hr>
+			<li id="track4" class="track" onclick="selectTrack(4)">
+				<a>
+					Wistle
+				</a>
+			</li>
+			<hr>
+		</ol>
+	</div>
+</div>
+{% endblock content %}
