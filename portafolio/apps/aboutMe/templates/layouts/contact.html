@@ -1,0 +1,47 @@
+{% extends 'master.html' %}
+
+{% block title %}
+Contact Form
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div id="contact">
+            <section>
+                <h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                        <circle cx="8" cy="8" r="8"/>
+                    </svg>
+                    Contacto Personal
+                </h1>
+                <hr>
+                <article>
+                    <p>
+                        <h4>Código QR</h4>
+                        <figcaption>
+                            <img src="../../static/img/social/yahoo.png" title="yahoo.com">
+                            <img src="../../static/img/social/gmail.png" title="gmail.com">
+                        </figcaption>
+                    </p>
+                </article>
+                <article>
+                    <form action="setms" method="POST">
+                        {% csrf_token %}
+                        <fieldset>
+                            <legend>Mensaje de Contacto</legend>
+                            <p>
+                                <h4>Mensaje Privado</h4>
+                                <input type="text" name="name" placeholder="Nombre del contacto" required>
+                                <input type="email" name="email" placeholder="E-mail de contacto" required>
+                                <textarea name="message" placeholder="Mensaje" required></textarea>
+                            </p>
+                            <button type="submit" name="enviar">
+                                <b>Enviar</b>
+                            </button>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+        </div>
+    </div>
+{% endblock content %}

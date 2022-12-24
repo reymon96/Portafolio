@@ -1,0 +1,83 @@
+{% extends 'master.html' %}
+
+{% block title %}
+modules
+{% endblock title %}
+
+{% block content %}
+	<div class="container">
+		<div id="modules">
+			<section>
+				<h1>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                        <circle cx="8" cy="8" r="8"/>
+                    </svg>
+					Modulos de Muestra
+				</h1>
+				<hr>
+				<article class="module-details">
+					<fieldset>
+						<legend>Seguimiento de rostros</legend>
+						<img src="../../static/img/modules/module_sf.jpg" title="Detección de rostro">
+						<div class="container-mod">
+							<p>
+								<h3>Detalles:</h3> 
+								Modulo de seguimiento de rostros empleando el algoritmo en cascada(Haar) y librerias para el tratamiento de imágenes(OpenCV).
+								<h5>Tecnologías Utilizadas:</h5>
+								<ul>
+									<li>Python3</li>
+									<li>OpenCV</li>
+									<li>Haar Cascade</li>
+									<li>Matplotlib</li>
+								</ul>
+							</p>
+							<a href="https://github.com/reymon96/haar_detect">Enlace directo a Github</a>
+						</div>
+					</fieldset>
+				</article>
+				<article class="module-details">
+					<fieldset>
+						<legend>Reproductor MP3</legend>
+						<img src="../../static/img/modules/module_rep.jpg" title="ReproductorMP3">
+						<div class="container-mod">
+							<p>
+								<h3>Detalles:</h3>
+								Reproductor Web Mp3. Aplicación funcional de muestra a manera de reproductor básico.
+								<h5>Tecnologías Utilizadas</h5>
+								<ul>
+									<li>JQuery</li>
+									<li>SASS</li>
+									<li>HTML5</li>
+									<li>Javascript</li>
+								</ul>
+							</p>
+							<a href="modules/reproducer">Enlace a la aplicación</a>
+						</div>
+					</fieldset>
+				</article>
+				<article class="module-details">
+					<fieldset>
+						<legend>Modulo de Posgrado</legend>
+						<img src="../../static/img/modules/module_post.png">
+						<div class="container-mod">
+							<p>
+								<h3>Detalles:</h3>
+								Sistema de registro de alumnos de posgrado. Acceso a las distintas áreas disponibles para la inscripción de estos. Así como un sistema de control para los docentes y administrativos.
+								<h5>Tecnologías Utilizadas:</h5>
+								<ul>
+									<li>PHP 7.x</li>
+									<li>Laravel 7.x</li>
+									<li>CSS3</li>
+									<li>MySQL</li>
+									<li>JSON</li>
+									<li>JQuery</li>
+								</ul>
+							</p>
+							<a href="https://github.com/reymon96/Posgrados_web" title="Modulo de Posgrado">Enlace directo a Github</a>
+						</div>
+					</fieldset>
+				</article>
+			</section>
+		</div>
+	</div>
+{% endblock content %}

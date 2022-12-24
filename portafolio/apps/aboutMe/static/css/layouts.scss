@@ -1,0 +1,199 @@
+$breakpoints: (
+	sm: 540px,
+	md: 750px,
+	lg: 1000px,
+);
+@mixin media-up($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		@media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+			@content;
+		}	
+	} @else {
+		@warn '#{$breakpoint} invalid breakpoint.';
+	}
+	
+}
+.container {
+	h1 {
+		font-size: 35px;
+	}
+	h4 {
+		text-align: right;
+	}
+	font-family: sans-serif;
+	padding: 30px;
+	//Index.html-------------------------------------------------------
+	#index {
+		#academic{ 
+			img {
+				width: 100%;
+				border: solid;
+			}
+			th {
+				width: 50%;
+			}
+		}
+		#table-skills {
+			width: 100%;
+			th {
+				width: 50%;
+			}
+			img {
+				width: 30px;
+			}
+		}
+		article {
+			margin-top: 50px;
+		}
+	}
+	//Jobs.html--------------------------------------------------------
+	#jobs {
+		#job01 {
+			#img-screen {
+				width: 100%;
+				.img-container {
+					width: 100%;
+					img {
+						border: ridge;
+					}
+					div {
+						border: groove;
+						background-color: white;
+						float: right;
+						text-align: left;
+						padding: 2px;
+					}
+					//Ajuste en base al tamaño-------------------------
+					@include media-up(sm) {
+						img {
+							width: 100%;
+						}
+						div {
+							width: 98%;
+						}
+					}
+					@include media-up(md) {
+						img {
+							width: 100%;
+						}
+						div {
+							width: 98%;
+						}
+					}
+					@include media-up(lg) {
+						img {
+							width: 50%;
+						}
+						div {
+							width: 45%;
+						}
+					}
+				}
+			}	
+		}
+		
+		#job02 {
+			#img-screen {
+				width: 100%;
+				.img-container2 {
+					width: 100%;
+					img {
+						border: ridge;
+						width: 50%;
+					}
+					div {
+						border: groove;
+						background-color: white;
+						float: right;
+						text-align: left;
+						padding: 2px;
+						width: 45%;
+					}
+				}
+			}
+		}
+		#img-thumbnail {
+			img {
+				width: 13%;
+				border: groove;
+			}
+			img:hover {
+				border: 0;
+			}
+		}
+		article {
+			margin-top: 50px;
+		}
+	}
+	//Modules----------------------------------------------------------
+	#modules {
+		.module-details {
+			img {
+				border: double;
+				float: left;
+			}
+			.container-mod {
+				padding: 5px;
+				p {
+					float: left;
+					text-align: left;
+				}
+			}
+			@include media-up(sm) {
+				img {
+					width: 100%;
+				}
+				.container-mod {
+					margin-left: 0%;
+					width: 100%;
+				}
+			}
+			@include media-up(md) {
+				img {
+					width: 40%;
+				}
+				.container-mod {
+					margin-left: 45%;
+					width: 50%;
+				}
+			}
+			@include media-up(lg) {
+				img {
+					width: 40%;
+				}
+				.container-mod {
+					margin-left: 45%;
+					width: 50%;
+				}
+			}
+		}
+	}
+	//Contact.html-----------------------------------------------------
+	#contact {
+		img {
+			width: 200px;
+			height: 200px;
+			border: solid black;
+			margin-left: 20px;
+		}
+		input {
+			width: 40%;
+			float: left;
+			margin-left: 5%;
+			height: 30px;
+			font-family: inherit;
+			border: solid gray;
+		}
+		textarea {
+			width: 99%;
+			height: 300px;
+			margin-top: 10px;
+		} 
+		button {
+			width: 200px;
+			height: 30px;
+			font-size: 15px;
+			font-family: sans-serif;
+		}
+	}
+}

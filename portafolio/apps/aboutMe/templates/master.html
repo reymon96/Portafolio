@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		{% block title %}
+			Document title
+		{% endblock title %}
+	</title>
+
+	<script type="text/javascript" src="./static/js/jquery.min.js"></script>
+	<link rel="stylesheet" href="./static/css/master.css">
+	<link rel="stylesheet" href="./static/css/layouts.css">
+	
+</head>
+<body>
+
+	<div>
+		{% include './sections/navbar.html' %}
+	</div>
+	<div>
+		<main>
+			{% block content %}
+				All code here
+			{% endblock content %}
+		</main>
+	</div>
+	<div>
+		<footer>
+			<h4>Desing Django</h4>
+			<h5>December 2022</h5>
+			<h6>Web Portfolio Ramón De La Cruz</h6>
+		</footer>
+	</div>
+	
+</body>
+</html>

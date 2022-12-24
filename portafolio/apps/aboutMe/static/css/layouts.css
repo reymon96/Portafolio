@@ -1,0 +1,162 @@
+.container {
+  font-family: sans-serif;
+  padding: 30px;
+}
+.container h1 {
+  font-size: 35px;
+}
+.container h4 {
+  text-align: right;
+}
+.container #index #academic img {
+  width: 100%;
+  border: solid;
+}
+.container #index #academic th {
+  width: 50%;
+}
+.container #index #table-skills {
+  width: 100%;
+}
+.container #index #table-skills th {
+  width: 50%;
+}
+.container #index #table-skills img {
+  width: 30px;
+}
+.container #index article {
+  margin-top: 50px;
+}
+.container #jobs #job01 #img-screen {
+  width: 100%;
+}
+.container #jobs #job01 #img-screen .img-container {
+  width: 100%;
+}
+.container #jobs #job01 #img-screen .img-container img {
+  border: ridge;
+}
+.container #jobs #job01 #img-screen .img-container div {
+  border: groove;
+  background-color: white;
+  float: right;
+  text-align: left;
+  padding: 2px;
+}
+@media screen and (min-width: 540px) {
+  .container #jobs #job01 #img-screen .img-container img {
+    width: 100%;
+  }
+  .container #jobs #job01 #img-screen .img-container div {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .container #jobs #job01 #img-screen .img-container img {
+    width: 100%;
+  }
+  .container #jobs #job01 #img-screen .img-container div {
+    width: 98%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container #jobs #job01 #img-screen .img-container img {
+    width: 50%;
+  }
+  .container #jobs #job01 #img-screen .img-container div {
+    width: 45%;
+  }
+}
+.container #jobs #job02 #img-screen {
+  width: 100%;
+}
+.container #jobs #job02 #img-screen .img-container2 {
+  width: 100%;
+}
+.container #jobs #job02 #img-screen .img-container2 img {
+  border: ridge;
+  width: 50%;
+}
+.container #jobs #job02 #img-screen .img-container2 div {
+  border: groove;
+  background-color: white;
+  float: right;
+  text-align: left;
+  padding: 2px;
+  width: 45%;
+}
+.container #jobs #img-thumbnail img {
+  width: 13%;
+  border: groove;
+}
+.container #jobs #img-thumbnail img:hover {
+  border: 0;
+}
+.container #jobs article {
+  margin-top: 50px;
+}
+.container #modules .module-details img {
+  border: double;
+  float: left;
+}
+.container #modules .module-details .container-mod {
+  padding: 5px;
+}
+.container #modules .module-details .container-mod p {
+  float: left;
+  text-align: left;
+}
+@media screen and (min-width: 540px) {
+  .container #modules .module-details img {
+    width: 100%;
+  }
+  .container #modules .module-details .container-mod {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .container #modules .module-details img {
+    width: 40%;
+  }
+  .container #modules .module-details .container-mod {
+    margin-left: 45%;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container #modules .module-details img {
+    width: 40%;
+  }
+  .container #modules .module-details .container-mod {
+    margin-left: 45%;
+    width: 50%;
+  }
+}
+.container #contact img {
+  width: 200px;
+  height: 200px;
+  border: solid black;
+  margin-left: 20px;
+}
+.container #contact input {
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+  height: 30px;
+  font-family: inherit;
+  border: solid gray;
+}
+.container #contact textarea {
+  width: 99%;
+  height: 300px;
+  margin-top: 10px;
+}
+.container #contact button {
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+/*# sourceMappingURL=layouts.css.map */
